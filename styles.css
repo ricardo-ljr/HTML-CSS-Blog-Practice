@@ -8,6 +8,50 @@
   margin: 40px 0px;
 }
 
+/* CATEGORIES CSS */
+
+.categories {
+  padding: 2rem;
+}
+
+.categories > ul {
+  list-style-type: none;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.categories > ul > li {
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.categories > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  position: relative;
+}
+
+.categories > ul > li > figure > img {
+  width: 100%;
+}
+
+.categories > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(250, 208, 196, 0.9);
+  width: 100%;
+}
+
+.categories > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+}
+
 /* CONTACT CSS */
 
 input[type="text"],
